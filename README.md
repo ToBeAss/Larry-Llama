@@ -12,6 +12,11 @@ ollama serve
 ```
 You can check if Ollama is running on: http://localhost:11434
 
+* Pull the model from Ollama
+```sh
+ollama pull llama3.1
+```
+
 You can stop Ollama from running in the task manager (Windows) or using the icon in the menu bar (MacOS), or:
 
 Windows:
@@ -20,11 +25,6 @@ Get-Process | Where-Object {$_.ProcessName -like '*ollama*'} | Stop-Process
 ```
 
 If you started it using ollama serve it will stop running once you close the window
-
-* Pull the model from Ollama
-```sh
-ollama pull llama3.1
-```
 
 ### Installation
 * Clone and enter the repository
