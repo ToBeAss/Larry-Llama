@@ -27,7 +27,7 @@ ollama pull llama3.1
 ### Installation
 Clone and enter the repository
 
-### Windows
+#### Windows
 
 Create a virtual environment in python
 ```sh
