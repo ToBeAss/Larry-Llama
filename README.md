@@ -19,6 +19,8 @@ Windows:
 Get-Process | Where-Object {$_.ProcessName -like '*ollama*'} | Stop-Process
 ```
 
+If you started it using ollama serve it will stop running once you close the window
+
 Pull the model from Ollama
 ```sh
 ollama pull llama3.1
