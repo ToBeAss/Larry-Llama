@@ -4,9 +4,9 @@ A personalised chatbot based on Meta Llama3.1, using RAG to get personal data.
 ## Instructions
 
 ### Ollama
-Download Ollama: https://ollama.com/download
+* Download Ollama: https://ollama.com/download
 
-Start Ollama via the desktop app or:
+* Start Ollama via the desktop app or:
 ```sh
 ollama serve
 ```
@@ -21,27 +21,27 @@ Get-Process | Where-Object {$_.ProcessName -like '*ollama*'} | Stop-Process
 
 If you started it using ollama serve it will stop running once you close the window
 
-Pull the model from Ollama
+* Pull the model from Ollama
 ```sh
 ollama pull llama3.1
 ```
 
 ### Installation
-Clone and enter the repository
+* Clone and enter the repository
 
 #### Windows
 
-Create a virtual environment in python
+* Create a virtual environment in python
 ```sh
 python -m venv venv
 ```
 
-Activate the virtual environment
+* Activate the virtual environment
 ```sh
 venv\Scripts\activate.bat
 ```
 
-Download the required packages
+* Download the required packages
 ```sh
 pip install -r requirements.txt
 ```
