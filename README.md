@@ -22,6 +22,7 @@ This will download the llama3.1:latest:8b model (4.7GB)
 * Clone and enter the repository
 ```sh
 git clone https://github.com/ToBeAss/Larry-Llama.git
+cd Larry-Llama
 ```
 
 * Create a virtual environment in python
