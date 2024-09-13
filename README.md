@@ -45,3 +45,20 @@ venv\Scripts\activate.bat
 ```sh
 pip install -r requirements.txt
 ```
+
+#### MacOS
+
+* Create a virtual environment in python
+```sh
+python -m venv venv
+```
+
+* Activate the virtual environment
+```sh
+source venv\bin\activate
+```
+
+* Download the required packages
+```sh
+pip install -r requirements.txt
+```
