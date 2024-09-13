@@ -35,11 +35,12 @@ python -m venv venv
 ```
 
 * Activate the virtual environment
-  * Windows
+
+Windows
 ```sh
 venv\Scripts\activate.bat
 ```
-  * MacOS
+MacOS
 ```sh
 source venv\bin\activate
 ```
