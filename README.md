@@ -29,31 +29,17 @@ If you started it using ollama serve it will stop running once you close the win
 ### Installation
 * Clone and enter the repository
 
-#### Windows
-
 * Create a virtual environment in python
 ```sh
 python -m venv venv
 ```
 
 * Activate the virtual environment
+  Windows
 ```sh
 venv\Scripts\activate.bat
 ```
-
-* Download the required packages
-```sh
-pip install -r requirements.txt
-```
-
-#### MacOS
-
-* Create a virtual environment in python
-```sh
-python -m venv venv
-```
-
-* Activate the virtual environment
+  MacOS
 ```sh
 source venv\bin\activate
 ```
