@@ -33,7 +33,7 @@ venv\Scripts\activate.bat
 ```
 MacOS
 ```sh
-source venv\bin\activate
+source venv/bin/activate
 ```
 
 * Download the required packages
