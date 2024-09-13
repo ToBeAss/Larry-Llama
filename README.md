@@ -16,6 +16,7 @@ You can check if Ollama is running on: http://localhost:11434
 ```sh
 ollama pull llama3.1
 ```
+This will download the llama3.1:latest:8b model (4GB)
 
 ### Installation
 * Clone and enter the repository
