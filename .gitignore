@@ -4,3 +4,6 @@ env/
 .pytest_cache
 __pycache__
 .vscode
+data/*
+!data/test.pdf
+chroma/

@@ -1,4 +1,5 @@
 import ollama
+from scripts.embedding import query_db
 
 desiredModel = 'llama3.1:latest'
 conversation_history = []
@@ -11,9 +12,13 @@ def addInstruction(instruction):
     return "Instruksjon mottatt."
 
 def ask(question):
+
+    data = query_db(question)
+    question_with_data = f"Ut i fra denne informasjonen:\n {data} \n{question}"
+
     conversation_history.append({
         'role': 'user',
-        'content': question,
+        'content': question_with_data,
     })
     
     result = ollama.chat(model=desiredModel, messages=conversation_history)
