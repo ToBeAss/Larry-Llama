@@ -52,6 +52,6 @@ python main.py
 ```
 
 ## Resources
-https://ollama.com/blog/embedding-models
-https://python.langchain.com/docs/integrations/vectorstores/chroma/
-https://python.langchain.com/docs/tutorials/rag/
+https://ollama.com/blog/embedding-models  
+https://python.langchain.com/docs/integrations/vectorstores/chroma/  
+https://python.langchain.com/docs/tutorials/rag/  
