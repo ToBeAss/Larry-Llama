@@ -52,6 +52,7 @@ python main.py
 ```
 
 ## Resources
+https://github.com/liahra/kvRAG/blob/main/query_data.py  
 https://ollama.com/blog/embedding-models  
 https://python.langchain.com/docs/integrations/vectorstores/chroma/  
 https://python.langchain.com/docs/tutorials/rag/  
