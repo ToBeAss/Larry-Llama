@@ -10,7 +10,7 @@ CHROMA_PATH = "chroma"
 DATA_PATH = "data"
 
 def get_embedding():
-    return OllamaEmbeddings(model = "all-minilm")
+    return OllamaEmbeddings(model = "nomic-embed-text")
 
 def get_db():
     return Chroma(persist_directory = CHROMA_PATH, embedding_function = get_embedding())
@@ -86,6 +86,7 @@ def calculate_chunk_indexes(chunks):
 def clear_database():
     if os.path.exists(CHROMA_PATH):
         shutil.rmtree(CHROMA_PATH)
+    print("The database has been cleared")
 
 
 # STEP 4: RETRIEVE RELEVANT DATA FROM DATABASE
