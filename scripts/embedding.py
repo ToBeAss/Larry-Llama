@@ -24,7 +24,7 @@ def load_documents(path: str):
 def split_documents(documents: list[Document]):
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size = 800,
-        chunk_overlap = 80,
+        chunk_overlap = 400,
         length_function = len,
         is_separator_regex = False,
     )
@@ -95,7 +95,7 @@ def query_db(query: str):
     # Søker i databasen.
     # Finner de 5 mest relevante dokumentene basert på likhet med query, velger ut den ene mest relevante, ved hjelp av Maximal Marginal Relevance (MMR) 
     retriever = db.as_retriever(
-        search_type="mmr", search_kwargs={"k": 1, "fetch_k": 5}
+        search_type="mmr", search_kwargs={"k": 5, "fetch_k": 20}
     )
     results = retriever.invoke(query)
     return results
