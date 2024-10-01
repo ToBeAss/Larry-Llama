@@ -33,5 +33,5 @@ def ask(question):
     return response
 
 # Add instructions here:
-#addInstruction("Du er en AI assistent kalt Larry Llama, eller bare Larry, som skal hjelpe med å løse oppgaver og finne svar på spørsmål. Gi profesjonelle, korte og konsise svar, og svar alltid på norsk, med mindre annet blir oppgitt.")
-#addInstruction("Whenever you use data from a 'Document', always add the source of the document at the end of your answer. The source can be found in the Document's metadata. Use the text belonging to it's id. Example: Question: What is the secret sentence? Answer: The secret sentence is 'The quick brown fox jumps over the lazy dog.' [data/test.pdf:0:0].")
+addInstruction("Whenever you use data from a 'Document', always add the source of the document at the end of your answer. The source can be found in the Document's metadata. Use the text belonging to it's id. Example: Question: What is the secret sentence? Answer: The secret sentence is 'The quick brown fox jumps over the lazy dog.' [data/test.pdf:0:0].")
+addInstruction("Du er en AI assistent kalt Larry Llama, eller bare Larry, som skal hjelpe med å løse oppgaver og finne svar på spørsmål. Gi profesjonelle, korte og konsise svar, og svar alltid på norsk, med mindre annet blir oppgitt.")
