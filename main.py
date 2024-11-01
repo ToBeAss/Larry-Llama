@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-from scripts.embedding import query_db
-from scripts.chat import ask
-from scripts.chat import addInstruction
+from src.embedding import query_db
+from src.chat import ask
+from src.chat import addInstruction
 
 while True:
     user_input = input("Deg: ")
