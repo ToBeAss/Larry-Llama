@@ -1,5 +1,4 @@
 import ollama
-from scripts.embedding import query_db
 
 desiredModel = 'llama3.1:latest'
 conversation_history = []
@@ -11,10 +10,9 @@ def addInstruction(instruction):
     })
     return "Instruksjon mottatt."
 
-def ask(question):
+def ask(question, retrieved_contexts):
 
-    data = query_db(question)
-    question_with_data = f"{question}\n{data}"
+    question_with_data = f"{question}\n{retrieved_contexts}"
 
     conversation_history.append({
         'role': 'user',
